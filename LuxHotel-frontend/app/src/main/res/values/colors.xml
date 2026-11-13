@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gold palette -->
+    <color name="gold_primary">#C9A84C</color>
+    <color name="gold_secondary">#A8893E</color>
+    <color name="gold_light">#E8D5A3</color>
+    <color name="gold_dark">#7A5A10</color>
+    <color name="gold_ripple">#33C9A84C</color>
+
+    <!-- Dark backgrounds -->
+    <color name="bg_dark">#0F0F0F</color>
+    <color name="bg_dark_secondary">#1A1A1A</color>
+    <color name="bg_surface">#141414</color>
+    <color name="bg_card">#1E1E1E</color>
+    <color name="card_bg">#1E1E1E</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F0EDE8</color>
+    <color name="text_muted">#7A7570</color>
+
+    <!-- Status badges -->
+    <color name="badge_admin">#C9A84C</color>
+    <color name="badge_receptionist">#3B82F6</color>
+    <color name="badge_housekeeping">#22C55E</color>
+
+    <!-- Task priority colors -->
+    <color name="green_primary">#1D9E75</color>
+    <color name="green_dark">#0F6E56</color>
+    <color name="red_primary">#E24B4A</color>
+    <color name="red_dark">#A32D2D</color>
+    <color name="amber_primary">#EF9F27</color>
+    <color name="amber_dark">#854F0B</color>
+    <color name="blue_primary">#378ADD</color>
+    <color name="blue_dark">#185FA5</color>
+
+    <!-- Borders -->
+    <color name="border_light">#2A2A2A</color>
+
+    <!-- Navigation -->
+    <color name="nav_item_color">#7A7570</color>
+    <color name="nav_item_active">#C9A84C</color>
+
+    <!-- Utility -->
+    <color name="white">#FFFFFF</color>
+    <color name="error_color">#EF4444</color>
+    <color name="divider_color">#2A2A2A</color>
+    <color name="input_bg">#262626</color>
+    <color name="input_stroke">#3A3A3A</color>
+    <color name="input_stroke_focused">#C9A84C</color>
+
+    <!-- Calendar specific -->
+    <color name="gold">#D4AF37</color>
+    <color name="red_alert">#E53E3E</color>
+    <color name="green_available">#48BB78</color>
+</resources>

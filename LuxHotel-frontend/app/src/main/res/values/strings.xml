@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LUXHOTEL</string>
+    <string name="app_name_full">LuxHotel Management</string>
+    <string name="tagline">HỆ THỐNG QUẢN LÝ KHÁCH SẠN CAO CẤP</string>
+    <string name="welcome_back">Vui lòng đăng nhập để tiếp tục</string>
+    <string name="label_username">TÊN ĐĂNG NHẬP</string>
+    <string name="label_password">MẬT KHẨU</string>
+    <string name="hint_username">Nhập tên đăng nhập</string>
+    <string name="hint_password">Nhập mật khẩu</string>
+    <string name="btn_login">ĐĂNG NHẬP</string>
+    <string name="footer_text">© 2024 LUXHOTEL. All rights reserved.</string>
+    <string name="logo_desc">LuxHotel Logo</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="back">Quay lại</string>
+    <string name="search">Tìm</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="done">Xong</string>
+    <string name="go">Đi tiếp</string>
+
+    <!-- Error messages -->
+    <string name="error_empty_username">Vui lòng nhập tên đăng nhập.</string>
+    <string name="error_empty_password">Vui lòng nhập mật khẩu.</string>
+    <string name="error_invalid_credentials">Tên đăng nhập hoặc mật khẩu không đúng.</string>
+
+    <!-- Role names -->
+    <string name="role_admin">QUẢN TRỊ VIÊN</string>
+    <string name="role_receptionist">LỄ TÂN</string>
+    <string name="role_housekeeping">BUỒNG PHÒNG</string>
+
+    <!-- Admin dashboard -->
+    <string name="greeting_admin">Chào mừng trở lại,</string>
+    <string name="section_admin_management">QUẢN LÝ HỆ THỐNG</string>
+    <string name="card_users_title">Quản lý nhân viên</string>
+    <string name="card_users_sub">Thêm, sửa, xóa tài khoản</string>
+    <string name="card_rooms_title">Quản lý phòng</string>
+    <string name="card_rooms_sub">Danh sách &amp; trạng thái phòng</string>
+    <string name="card_bookings_title">Đặt phòng</string>
+    <string name="card_bookings_sub">Xem tất cả đặt phòng</string>
+    <string name="card_reports_title">Báo cáo</string>
+    <string name="card_reports_sub">Doanh thu &amp; thống kê</string>
+    <string name="card_settings_title">Cài đặt hệ thống</string>
+    <string name="card_settings_sub">Cấu hình ứng dụng</string>
+    <string name="card_logs_title">Nhật ký hoạt động</string>
+    <string name="card_logs_sub">Lịch sử đăng nhập &amp; thao tác</string>
+
+    <!-- Receptionist dashboard -->
+    <string name="greeting_receptionist">Xin chào,</string>
+    <string name="section_receptionist_tasks">NGHIỆP VỤ LỄ TÂN</string>
+    <string name="action_checkin_title">CHECK-IN KHÁCH</string>
+    <string name="action_checkin_sub">Nhận khách mới vào phòng</string>
+    <string name="action_checkout_title">Check-out khách</string>
+    <string name="action_checkout_sub">Trả phòng &amp; thanh toán</string>
+    <string name="action_reservation_title">Đặt phòng trước</string>
+    <string name="action_reservation_sub">Quản lý danh sách đặt phòng</string>
+    <string name="action_room_status_title">Trạng thái phòng</string>
+    <string name="action_room_status_sub">Xem sơ đồ phòng khách sạn</string>
+    <string name="section_overview">Tổng quan hôm nay</string>
+    <string name="label_available">Trống</string>
+    <string name="label_booked">Đã đặt</string>
+    <string name="label_occupied">Đang ở</string>
+    <string name="label_dirty">Đang dọn</string>
+    <string name="section_management">Chức năng quản lý</string>
+    <string name="label_guest_management">Quản lý khách</string>
+    <string name="action_room_calendar_title">Lịch phòng</string>
+    <string name="label_profile">Hồ sơ tài khoản</string>
+
+    <!-- Housekeeping dashboard -->
+    <string name="greeting_housekeeping">Xin chào,</string>
+    <string name="section_housekeeping_tasks">NHIỆM VỤ BUỒNG PHÒNG</string>
+    <string name="action_task_list_title">Danh sách nhiệm vụ</string>
+    <string name="action_task_list_sub">Phòng cần dọn hôm nay</string>
+    <string name="action_clean_status_title">Cập nhật trạng thái</string>
+    <string name="action_clean_status_sub">Đánh dấu phòng đã dọn xong</string>
+    <string name="action_maintenance_title">Báo sự cố</string>
+    <string name="action_maintenance_sub">Gửi yêu cầu bảo trì phòng</string>
+    <string name="action_supplies_title">Vật tư, đồ dùng</string>
+    <string name="action_supplies_sub">Yêu cầu bổ sung vật tư</string>
+    <string name="section_today_stats">THỐNG KÊ HÔM NAY</string>
+    <string name="label_total_rooms">Tổng phòng</string>
+    <string name="label_unit_rooms">phòng</string>
+    <string name="label_done">Đã xong</string>
+    <string name="label_unit_tasks">việc</string>
+    <string name="section_task_list">DANH SÁCH CÔNG VIỆC</string>
+
+    <!-- activity booking -->
+    <string name="choose_date">Chọn ngày</string>
+    <string name="choose_time">Chọn giờ</string>
+    <string name="night_count_format">%d đêm</string>
+    <string name="price_format">%s ₫</string>
+    <string name="error_enter_name">Vui lòng nhập họ tên</string>
+    <string name="error_enter_id">Vui lòng nhập số CCCD / hộ chiếu</string>
+    <string name="error_choose_room_type">Vui lòng chọn loại phòng</string>
+    <string name="error_choose_room_number">Vui lòng chọn số phòng</string>
+    <string name="error_choose_checkin">Vui lòng chọn ngày nhận phòng</string>
+    <string name="error_choose_checkout">Vui lòng chọn ngày trả phòng</string>
+    <string name="booking_success_title">Đặt phòng thành công</string>
+    <string name="booking_success_message">Khách: %1$s\nPhòng: %2$s (%3$s)\nNhận: %4$s → Trả: %5$s\nThời gian: %6$s\nTổng tiền: %7$s</string>
+
+    <!-- Check-in form -->
+    <string name="section_search_booking">TÌM ĐẶT PHÒNG</string>
+    <string name="hint_search_booking">Mã đặt phòng / Tên khách / CCCD</string>
+    <string name="hint_enter_search">Nhập để tìm kiếm&#8230;</string>
+    <string name="status_awaiting_checkin">Chờ check-in</string>
+    <string name="label_guest_name">Khách hàng</string>
+    <string name="label_room">Phòng</string>
+    <string name="label_expected_checkin">Check-in dự kiến</string>
+    <string name="label_expected_checkout">Check-out dự kiến</string>
+
+    <string name="section_guest_confirm">XÁC NHẬN THÔNG TIN KHÁCH</string>
+    <string name="label_full_name_required">Họ và tên *</string>
+    <string name="hint_enter_name">Nhập họ tên khách</string>
+    <string name="label_id_card_required">CCCD / Hộ chiếu *</string>
+    <string name="hint_enter_id">Nhập số CCCD hoặc hộ chiếu</string>
+    <string name="label_phone">Số điện thoại</string>
+    <string name="hint_enter_phone">Nhập số điện thoại</string>
+
+    <string name="section_room_info">THÔNG TIN PHÒNG</string>
+    <string name="label_room_number">Số phòng</string>
+    <string name="label_room_type">Loại phòng</string>
+    <string name="label_checkin_date">Ngày nhận phòng</string>
+    <string name="label_checkout_date">Ngày trả phòng</string>
+
+    <string name="section_actual_checkin">THỜI GIAN CHECK-IN THỰC TẾ</string>
+    <string name="label_actual_checkin_required">Ngày &amp; giờ nhận phòng *</string>
+    <string name="label_actual_guest_count">Số lượng khách thực tế</string>
+    <string name="desc_increase">Tăng</string>
+    <string name="desc_decrease">Giảm</string>
+
+    <string name="section_payment">PHƯƠNG THỨC THANH TOÁN</string>
+    <string name="hint_choose_payment">Chọn phương thức</string>
+    <string name="label_deposit">Tiền đặt cọc (nếu có)</string>
+
+    <string name="section_note">GHI CHÚ</string>
+    <string name="hint_note">Yêu cầu đặc biệt, ghi chú thêm&#8230;</string>
+    <string name="btn_confirm_checkin_action">XÁC NHẬN CHECK-IN</string>
+
+    <!-- Additional helpers -->
+    <string name="booking_id_format">Mã ĐP: %1$s</string>
+    <string name="room_info_format">%1$s - %2$s</string>
+    <string name="guest_count_format">%1$d khách</string>
+    <string name="default_staff_name">Nhân viên Buồng phòng</string>
+    <string name="task_summary_format">Hôm nay bạn có %1$d việc cần làm</string>
+    <string name="tier_vip">VIP</string>
+    <string name="tier_standard">Standard</string>
+    <string name="priority_urgent">Gấp</string>
+    <string name="priority_normal">Bình thường</string>
+    <string name="priority_done">Xong</string>
+    <string name="placeholder_title">Tiêu đề</string>
+    <string name="placeholder_desc">Mô tả</string>
+    <string name="desc_card_icon">Card icon</string>
+    <string name="desc_action_icon">Action icon</string>
+
+    <!-- ==================== CHECK-OUT ==================== -->
+
+    <!-- Screen titles -->
+    <string name="title_checkout_list">Check-out khách</string>
+    <string name="title_checkout_detail">Chi tiết Check-out</string>
+
+    <!-- Search -->
+    <string name="hint_search_checkout">Tìm phòng hoặc tên khách…</string>
+
+    <!-- Status badges -->
+    <string name="badge_due_today">Đến hạn</string>
+    <string name="badge_overdue">Quá hạn</string>
+    <string name="badge_checked_out">Đã trả phòng</string>
+
+    <!-- Guest & room labels -->
+    <string name="label_guest">Khách</string>
+    <string name="label_nights">Số đêm</string>
+    <string name="label_total">Tổng cộng</string>
+    <string name="label_room_price">Tiền phòng</string>
+    <string name="label_extra_services">Dịch vụ thêm</string>
+    <string name="label_payment_method">Phương thức thanh toán</string>
+    <string name="label_note_checkout">Ghi chú trả phòng</string>
+
+    <!-- Section headers -->
+    <string name="section_payment_detail">Chi tiết thanh toán</string>
+    <string name="section_checkout_note">GHI CHÚ</string>
+
+    <!-- Hints -->
+    <string name="hint_checkout_note">Nhập ghi chú khi trả phòng (nếu có)…</string>
+    <string name="hint_choose_payment_checkout">Chọn phương thức thanh toán</string>
+
+    <!-- Payment methods (spinner entries) -->
+    <string name="payment_cash">Tiền mặt</string>
+    <string name="payment_card">Thẻ ngân hàng</string>
+    <string name="payment_transfer">Chuyển khoản</string>
+    <string name="payment_app">Ví điện tử / QR</string>
+
+    <!-- Buttons -->
+    <string name="btn_checkout_action">Check-out</string>
+    <string name="btn_confirm_checkout">XÁC NHẬN CHECK-OUT</string>
+
+    <!-- Date/time format strings (used in code via getString) -->
+    <string name="date_range_format">Nhận: %1$s  ·  Trả: %2$s  ·  %3$d đêm</string>
+    <string name="room_label_format">Phòng %1$s</string>
+    <string name="total_amount_format">%,d đ</string>
+    <string name="nights_format">%d đêm</string>
+
+    <!-- Confirmation dialog -->
+    <string name="dialog_checkout_title">Xác nhận trả phòng</string>
+    <string name="dialog_checkout_message">Bạn có chắc muốn xác nhận check-out cho %1$s – Phòng %2$s không?</string>
+    <string name="dialog_checkout_positive">Xác nhận</string>
+    <string name="dialog_checkout_negative">Hủy</string>
+
+    <!-- Success / error toasts -->
+    <string name="checkout_success">Check-out thành công! Phòng %1$s đã được trả.</string>
+    <string name="checkout_error">Có lỗi xảy ra. Vui lòng thử lại.</string>
+    <string name="checkout_error_no_payment">Vui lòng chọn phương thức thanh toán.</string>
+
+    <!-- Empty state -->
+    <string name="empty_checkout">Không có khách nào cần trả phòng hôm nay.</string>
+    <string name="empty_checkout_search">Không tìm thấy kết quả phù hợp.</string>
+
+    <!-- Customer management -->
+    <string name="status_arriving">Sắp đến</string>
+    <string name="status_staying">Đang ở</string>
+    <string name="status_left">Đã đi</string>
+    <string name="hint_search_customer">Tìm tên khách hoặc số phòng&#8230;</string>
+    <string name="label_total_guests">TỔNG KHÁCH</string>
+    <string name="label_currently_staying">ĐANG Ở</string>
+    <string name="section_guest_list">DANH SÁCH KHÁCH HÀNG</string>
+    <string name="empty_customer_list">Không có khách hàng nào</string>
+    <string name="add_customer">Thêm khách hàng</string>
+    <string name="today">Hôm nay</string>
+    <string name="prev_month">Tháng trước</string>
+    <string name="next_month">Tháng sau</string>
+    <string name="close">Đóng</string>
+
+    <!-- Multimedia & Networking -->
+    <string name="label_exchange_rate">Tỷ giá: %1$s đ/USD</string>
+    <string name="total_with_usd">%1$s đ (~%2$s)</string>
+    <string name="btn_capture_photo">Chụp ảnh sự cố</string>
+    <string name="section_incident_photo">HÌNH ẢNH SỰ CỐ</string>
+    <string name="desc_call">Gọi điện</string>
+    <string name="btn_call_technician">Gọi kỹ thuật viên</string>
+    <string name="card_map_title">Bản đồ</string>
+    <string name="btn_directions">Chỉ đường (Google Maps)</string>
+    <string name="label_location_loading">📍 Đang xác định vị trí...</string>
+    <string name="label_location_denied">📍 Vị trí: Bị từ chối</string>
+    <string name="label_location_gps_off">📍 GPS chưa bật</string>
+    <string name="label_location_failed">📍 Không thể lấy vị trí</string>
+    <string name="label_location_error">📍 Lỗi bảo mật vị trí</string>
+    <string name="label_location_format">📍 Lat: %1$s, Lng: %2$s</string>
+
+    <!-- Invoice History -->
+    <string name="title_invoice_history">Lịch sử hóa đơn</string>
+    <string name="hint_search_invoice">Tìm tên khách, số phòng hoặc mã ĐP...</string>
+    <string name="empty_invoice_history">Chưa có hóa đơn nào được thanh toán.</string>
+    <string name="label_invoice_id">Hóa đơn: #%1$s</string>
+    <string name="label_checkout_at">Ngày thanh toán: %1$s</string>
+    <string name="label_staff_id_format">Mã NV: %1$s</string>
+    <string name="label_stay_time">THỜI GIAN LƯU TRÚ</string>
+    <string name="btn_confirm_booking">XÁC NHẬN ĐẶT PHÒNG</string>
+    <string name="label_revenue_trend_positive">+%1$d%% so với tháng trước</string>
+    <string name="label_revenue_trend_negative">%1$d%% so với tháng trước</string>
+    <string name="label_room_usage_format">%1$d/%2$d phòng</string>
+    <string name="label_occupancy_rate">Tỉ lệ lấp đầy: %1$d%%</string>
+</resources>

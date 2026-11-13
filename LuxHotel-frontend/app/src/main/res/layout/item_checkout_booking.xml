@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#1E1E1E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Row 1: Room number + Status badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvRoomNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="101"
+                android:textColor="#D4AF37"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/badge_due_today"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_badge_green"
+                android:textColor="#48BB78" />
+
+        </LinearLayout>
+
+        <!-- Guest name -->
+        <TextView
+            android:id="@+id/tvGuestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Nguyễn Văn An"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Dates info -->
+        <TextView
+            android:id="@+id/tvDateRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Nhận: 07/06  ·  Trả: 10/06  ·  3 đêm"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2A2A2A" />
+
+        <!-- Row 2: Total amount + Checkout button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1,200,000 đ"
+                android:textColor="#D4AF37"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/action_checkout_title"
+                android:textColor="#121212"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_btn_gold"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

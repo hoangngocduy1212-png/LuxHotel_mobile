@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_task_drawer.xml
+    Reusable accordion/drawer card for each task group.
+    Bind header data via HousekeepingDashboardActivity, expand/collapse via TaskDrawerHelper.
+-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/bg_card"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/border_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ── Drawer Header (always visible, tap to toggle) ── -->
+        <LinearLayout
+            android:id="@+id/drawerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <!-- Icon bubble -->
+            <FrameLayout
+                android:id="@+id/iconBubble"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_icon_bubble_green">
+
+                <ImageView
+                    android:id="@+id/ivDrawerIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_sparkles"
+                    app:tint="@color/green_dark" />
+            </FrameLayout>
+
+            <!-- Title + subtitle -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDrawerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dọn phòng"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDrawerSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="5 phòng hôm nay"
+                    android:textColor="@color/text_muted"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Count badge -->
+            <TextView
+                android:id="@+id/tvDrawerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_badge_green"
+                android:paddingStart="9dp"
+                android:paddingEnd="9dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="5"
+                android:textColor="@color/green_dark"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <!-- Chevron arrow -->
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_chevron_down"
+                app:tint="@color/text_muted" />
+
+        </LinearLayout>
+
+        <!-- ── Divider (shown when expanded) ── -->
+        <View
+            android:id="@+id/drawerDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_light"
+            android:visibility="gone" />
+
+        <!-- ── Task list (expand/collapse) ── -->
+        <LinearLayout
+            android:id="@+id/drawerBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

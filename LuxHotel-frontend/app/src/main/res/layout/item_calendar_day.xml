@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_calendar_day.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/containerDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:minHeight="52dp"
+        android:background="@drawable/bg_calendar_day"
+        android:padding="4dp">
+
+        <!-- Day number -->
+        <TextView
+            android:id="@+id/tvDayNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Status dots row -->
+        <LinearLayout
+            android:id="@+id/layoutStatusDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/dotAvailable"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/bg_dot_green"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/dotOccupied"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/bg_dot_gold"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/dotDirty"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/bg_dot_red"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

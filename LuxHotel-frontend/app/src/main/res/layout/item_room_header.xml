@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_icon_bubble_blue">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_building"
+            app:tint="#4299E1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:text="Standard Rooms"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHeaderCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_badge_blue"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="5 phòng"
+        android:textColor="#4299E1"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_chevron_down"
+        app:tint="#A0AEC0" />
+</LinearLayout>

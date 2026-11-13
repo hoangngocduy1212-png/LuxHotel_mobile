@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.LuxHotel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorPrimaryVariant">@color/gold_secondary</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/gold_light</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Custom Picker Themes -->
+        <item name="android:datePickerDialogTheme">@style/CustomPickerTheme</item>
+        <item name="android:timePickerDialogTheme">@style/CustomPickerTheme</item>
+    </style>
+
+    <!-- Style cho DatePicker và TimePicker để không bị quá tối -->
+    <style name="CustomPickerTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorAccent">@color/gold_primary</item>
+        <item name="android:headerBackground">@color/gold_primary</item>
+        <item name="android:windowBackground">@color/bg_card</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_muted</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PickerButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/PickerButtonStyle</item>
+    </style>
+
+    <style name="PickerButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/gold_primary</item>
+    </style>
+
+    <!-- Splash / Login theme (no action bar) -->
+    <style name="Theme.LuxHotel.Login" parent="Theme.LuxHotel">
+        <item name="android:windowBackground">@color/bg_dark</item>
+    </style>
+
+    <!-- TextInputLayout – luxury dark style -->
+    <style name="LuxInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/input_bg</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="hintTextColor">@color/gold_secondary</item>
+        <item name="boxCornerRadiusTopStart">2dp</item>
+        <item name="boxCornerRadiusTopEnd">2dp</item>
+        <item name="boxCornerRadiusBottomStart">2dp</item>
+        <item name="boxCornerRadiusBottomEnd">2dp</item>
+        <!-- Force focused stroke color via color state list -->
+        <item name="android:textColorHint">@color/text_muted</item>
+    </style>
+
+    <style name="DayHeaderText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#A0AEC0</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@color/bg_card</item>
+    </style>
+
+</resources>

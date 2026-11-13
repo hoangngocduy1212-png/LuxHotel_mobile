@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1E1E1E">
+
+    <EditText
+        android:id="@+id/etRoomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số phòng (VD: 101)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7A7570"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Loại phòng (VD: Deluxe)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7A7570" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Giá mỗi đêm (VNĐ)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7A7570"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etFloor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Tầng"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7A7570"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hạng phòng:"
+        android:textColor="#A0AEC0"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spTier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:entries="@array/room_tiers"
+        android:backgroundTint="#D4AF37" />
+
+</LinearLayout>

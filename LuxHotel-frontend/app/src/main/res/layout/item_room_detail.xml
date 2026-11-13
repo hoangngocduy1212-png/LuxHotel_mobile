@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_room_detail.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- Status indicator bar -->
+    <View
+        android:id="@+id/viewStatusBar"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="#48BB78" />
+
+    <!-- Room info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRoomNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phòng 101"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phòng đơn"
+            android:textColor="#A0AEC0"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Guest name (if occupied) -->
+    <TextView
+        android:id="@+id/tvGuestName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Nguyễn Văn A"
+        android:textColor="#A0AEC0"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- Status chip -->
+    <TextView
+        android:id="@+id/tvRoomStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_status_chip"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="Trống"
+        android:textColor="#48BB78"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

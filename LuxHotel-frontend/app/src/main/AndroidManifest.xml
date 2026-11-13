@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:name=".LuxHotelApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LuxHotel"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Login screen — app entry point -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LuxHotel.Login"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Admin dashboard -->
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:exported="false"
+            android:label="Admin – LUXHOTEL" />
+
+        <!-- Receptionist dashboard -->
+        <activity
+            android:name=".activities.ReceptionistDashboardActivity"
+            android:exported="false"
+            android:label="Lễ tân – LUXHOTEL" />
+
+        <!-- Booking (ReceptionistDashboard) -->
+        <activity
+            android:name=".activities.BookingActivity"
+            android:exported="false"
+            android:label="Đặt phòng – LUXHOTEL"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Check-in -->
+        <activity
+            android:name=".activities.CheckInActivity"
+            android:exported="false"
+            android:label="Check-in – LUXHOTEL"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Check-out: danh sách -->
+        <activity
+            android:name=".activities.CheckoutListActivity"
+            android:exported="false"
+            android:label="Check-out – LUXHOTEL" />
+
+        <!-- Check-out: chi tiết & xác nhận -->
+        <activity
+            android:name=".activities.CheckoutDetailActivity"
+            android:exported="false"
+            android:label="Chi tiết check-out – LUXHOTEL"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Housekeeping dashboard -->
+        <activity
+            android:name=".activities.HousekeepingDashboardActivity"
+            android:exported="false"
+            android:label="Buồng phòng – LUXHOTEL"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Maintenance report (tab Báo cáo SC) -->
+        <activity
+            android:name=".activities.MaintenanceReportActivity"
+            android:exported="false"
+            android:label="Báo cáo sửa chữa – LUXHOTEL"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Staff profile (tab Cá nhân) -->
+        <activity
+            android:name=".activities.StaffProfileActivity"
+            android:exported="false"
+            android:label="Hồ sơ cá nhân – LUXHOTEL"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Receptionist profile -->
+        <activity
+            android:name=".activities.ReceptionistProfileActivity"
+            android:exported="false"
+            android:label="Hồ sơ lễ tân – LUXHOTEL" />
+
+        <!-- Customer Management -->
+        <activity
+            android:name=".activities.CustomerManagementActivity"
+            android:exported="false"
+            android:label="Quản lý khách – LUXHOTEL"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Room Calendar -->
+        <activity
+            android:name=".activities.RoomCalendarActivity"
+            android:exported="false"
+            android:label="Lịch phòng – LUXHOTEL" />
+
+        <!-- Room List -->
+        <activity
+            android:name=".activities.RoomListActivity"
+            android:exported="false"
+            android:label="Danh sách phòng – LUXHOTEL" />
+
+        <!-- Admin Maintenance Management -->
+        <activity
+            android:name=".activities.AdminMaintenanceActivity"
+            android:exported="false"
+            android:label="Quản lý sửa chữa – LUXHOTEL" />
+
+        <!-- Staff Management -->
+        <activity
+            android:name=".activities.StaffManagementActivity"
+            android:exported="false"
+            android:label="Quản lý tài khoản – LUXHOTEL" />
+
+        <activity
+            android:name=".activities.InvoiceHistoryActivity"
+            android:exported="false"
+            android:label="Lịch sử hóa đơn – LUXHOTEL" />
+
+        <activity
+            android:name=".activities.HotelMapActivity"
+            android:exported="false"
+            android:label="Bản đồ khách sạn – LUXHOTEL" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.luxhotel.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
